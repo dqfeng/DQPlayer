@@ -1,0 +1,41 @@
+//
+//  DQPlayerCacheFile.h
+//  DQPlayer
+//
+//  Created by dqfeng on 2019/1/17.
+//  Copyright © 2019年 appfactory. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+
+@interface DQPlayerCacheFile : NSObject
+
+@property (nonatomic,copy,readonly) NSString *cacheFilePath;
+@property (nonatomic,copy,readonly) NSString *indexFilePath;
+@property (nonatomic,assign,readonly) NSUInteger fileLength;
+@property (nonatomic,assign,readonly) NSUInteger readOffset;
+@property (nonatomic,copy,readonly) NSDictionary *responseHeaders;
+@property (nonatomic,readonly) BOOL isCompeleted;
+@property (nonatomic,readonly) BOOL isEof;
+@property (nonatomic,readonly) BOOL isFileLengthValid;
+
+@property (nonatomic,readonly) NSUInteger cachedDataBound;
+
++ (instancetype)cacheFileWithFilePath:(NSString *)filePath;
+- (instancetype)initWithFilePath:(NSString *)filePath;
+
++ (NSString *)indexFileExtension;
+
+- (NSRange)firstNotCachedRangeFromPosition:(NSUInteger)pos;
+
+- (NSData *)dataWithRange:(NSRange)range;
+
+- (BOOL)setResponse:(NSHTTPURLResponse *)response;
+- (BOOL)saveData:(NSData *)data atOffset:(NSUInteger)offset synchronize:(BOOL)synchronize;
+- (BOOL)synchronize;
+
+- (void)removeCache;
+
+@end
+
