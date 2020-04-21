@@ -58,7 +58,6 @@
 //    http://www.w3school.com.cn/example/html5/mov_bbb.mp4
     
     NSURL *url = [NSURL URLWithString:@"http://www.w3school.com.cn/example/html5/mov_bbb.mp4"];
-    //http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4
     [self.player playWithUrl:url];
     [self.playerView.layer addSublayer:self.player.playerLayer];
     __typeof(self) weakSelf = self;

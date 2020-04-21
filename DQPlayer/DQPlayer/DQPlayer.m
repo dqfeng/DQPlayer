@@ -55,8 +55,8 @@
         self.resourceLoader = [DQPlayerResourceLoader resourceLoaderWithCacheFilePath:cacheFilePath];
         AVURLAsset *asset = [AVURLAsset URLAssetWithURL:resourceURL options:nil];
         [asset.resourceLoader setDelegate:self.resourceLoader queue:dispatch_get_main_queue()];
-//        playerItem= [AVPlayerItem playerItemWithAsset:asset];
-        playerItem = [[AVPlayerItem alloc] initWithURL:url];
+        playerItem= [AVPlayerItem playerItemWithAsset:asset];
+//        playerItem = [[AVPlayerItem alloc] initWithURL:url];
     }
     if (!self.player) {
         self.player = [AVPlayer playerWithPlayerItem:playerItem];
