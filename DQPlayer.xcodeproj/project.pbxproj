@@ -13,6 +13,7 @@
 		CB82BA0C202C35F300CD2E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB82BA0B202C35F300CD2E8B /* Assets.xcassets */; };
 		CB82BA0F202C35F300CD2E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB82BA0D202C35F300CD2E8B /* LaunchScreen.storyboard */; };
 		CB82BA12202C35F300CD2E8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB82BA11202C35F300CD2E8B /* main.m */; };
+		CBC36C8724727E2F00C3D77F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CBC36C8624727E2F00C3D77F /* README.md */; };
 		CBEE6019244EC62600A6BEEF /* DQPlayerResourceLoadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE6010244EC62600A6BEEF /* DQPlayerResourceLoadTask.m */; };
 		CBEE601B244EC62600A6BEEF /* DQPlayerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE6013244EC62600A6BEEF /* DQPlayerUtils.m */; };
 		CBEE601C244EC62600A6BEEF /* DQPlayerCacheFile.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE6015244EC62600A6BEEF /* DQPlayerCacheFile.m */; };
@@ -31,6 +32,7 @@
 		CB82BA0E202C35F300CD2E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB82BA10202C35F300CD2E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB82BA11202C35F300CD2E8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBC36C8624727E2F00C3D77F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		CBEE600F244EC62600A6BEEF /* DQPlayerCacheFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQPlayerCacheFile.h; sourceTree = "<group>"; };
 		CBEE6010244EC62600A6BEEF /* DQPlayerResourceLoadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQPlayerResourceLoadTask.m; sourceTree = "<group>"; };
 		CBEE6011244EC62600A6BEEF /* DQPlayerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQPlayerUtils.h; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				CB82BA03202C35F300CD2E8B /* AppDelegate.m */,
 				CB82BA05202C35F300CD2E8B /* ViewController.h */,
 				CB82BA06202C35F300CD2E8B /* ViewController.m */,
+				CBC36C8624727E2F00C3D77F /* README.md */,
 				CB82BA08202C35F300CD2E8B /* Main.storyboard */,
 				CB82BA0B202C35F300CD2E8B /* Assets.xcassets */,
 				CB82BA0D202C35F300CD2E8B /* LaunchScreen.storyboard */,
@@ -164,6 +167,7 @@
 			files = (
 				CB82BA0F202C35F300CD2E8B /* LaunchScreen.storyboard in Resources */,
 				CB82BA0C202C35F300CD2E8B /* Assets.xcassets in Resources */,
+				CBC36C8724727E2F00C3D77F /* README.md in Resources */,
 				CB82BA0A202C35F300CD2E8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
